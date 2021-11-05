@@ -20,7 +20,7 @@ $ npm install -g wlel
 $ wlel COMMAND
 running command...
 $ wlel (-v|--version|version)
-wlel/1.0.0 darwin-x64 node-v14.18.1
+wlel/2.0.0 darwin-x64 node-v14.18.1
 $ wlel --help [COMMAND]
 USAGE
   $ wlel COMMAND
