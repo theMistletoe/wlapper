@@ -1,7 +1,7 @@
 sample
 ======
 
-this is sample
+this is ECR's Lambda local exec wrapper
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/sample.svg)](https://npmjs.org/package/sample)
