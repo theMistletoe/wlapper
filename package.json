@@ -1,12 +1,12 @@
 {
-  "name": "wlel",
+  "name": "wlapper",
   "description": "this is ECR's Lambda local exec wrapper",
   "version": "1.0.0",
   "author": "Motoaki Tanaka @theMistletoe",
   "bin": {
-    "wlel": "./bin/run"
+    "wlapper": "./bin/run"
   },
-  "bugs": "https://github.com/theMistletoe/wlel/issues",
+  "bugs": "https://github.com/theMistletoe/wlapper/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -42,9 +42,9 @@
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
-    "bin": "wlel"
+    "bin": "wlapper"
   },
-  "repository": "theMistletoe/wlel",
+  "repository": "theMistletoe/wlapper",
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
