@@ -22,6 +22,8 @@ class Wlapper extends Command {
     const { port, tag, data } = flags
     const { image } = args
 
+    if (!image) throw new Error('You need to specify the docker image.');
+
     const tempName = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 
     try {
@@ -30,7 +32,7 @@ class Wlapper extends Command {
       const {
         stdout,
         stderr
-      } = await execPromise(`curl -X POST -sS http://localhost:${port}/2015-03-31/functions/function/invocations -d \'${data}\'`);
+      } = await execPromise(`curl -X POST -sS http://localhost:${port ?? '9000'}/2015-03-31/functions/function/invocations -d \'${data}\'`);
       if (stderr) return console.error(stderr);
       console.log(stdout);
 
