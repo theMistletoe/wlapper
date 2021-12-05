@@ -11,6 +11,7 @@ this is Lambda container images's local execution wrapper.
 
 <!-- toc -->
 * [Desciption](#desciption)
+* [Example](#example)
 * [Usage](#usage)
 * [Requirement](#requirement)
 # Desciption
@@ -21,7 +22,9 @@ How to exec simulation on Lambda locally is explained on [this](https://docs.aws
 
 This tool wraps above process and makes it easy to use as a CLI tool.
 
+# Example
 
+[example page](/example/README)
 
 
 <!-- tocstop -->
@@ -44,6 +47,7 @@ USAGE
 # Requirement
 
 ```
+nodejs
 npm
 docker
 ```
