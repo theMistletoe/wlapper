@@ -14,22 +14,21 @@ this is Lambda container images's local execution wrapper.
 * [Example](#example)
 * [Usage](#usage)
 * [Requirement](#requirement)
-# Desciption
-
-AWS Lambda supports execution in container images.
-The Dockerfile used and the means to run the implementation locally during development are provided below.
-How to exec simulation on Lambda locally is explained on [this](https://docs.aws.amazon.com/lambda/latest/dg/images-test.html).
-
-This tool wraps above process and makes it easy to use as a CLI tool.
-
-# Example
-
-[example page](/example/README)
-
-
 <!-- tocstop -->
 # Usage
 <!-- usage -->
+```sh-session
+$ npm install -g wlapper
+$ wlapper COMMAND
+running command...
+$ wlapper (-v|--version|version)
+wlapper/1.0.2 darwin-x64 node-v16.13.0
+$ wlapper --help [COMMAND]
+USAGE
+  $ wlapper COMMAND
+...
+```
+<!-- usagestop -->
 ```sh-session
 $ npm install -g wlapper
 or

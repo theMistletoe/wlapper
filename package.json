@@ -1,7 +1,7 @@
 {
   "name": "wlapper",
   "description": "this is ECR's Lambda local exec wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Motoaki Tanaka @theMistletoe",
   "bin": {
     "wlapper": "./bin/run"
