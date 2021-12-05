@@ -1,4 +1,5 @@
 import {Command, flags} from '@oclif/command'
+import axios from 'axios';
 import { exec } from 'child_process'
 import { promisify } from 'util';
 const execPromise = promisify(exec);
@@ -29,12 +30,16 @@ class Wlapper extends Command {
     try {
       await execPromise(`docker run -d --rm --name=${tempName} -p ${port ?? '9000'}:8080 ${image}${tag ? ':'+ tag : ''}`);
 
-      const {
-        stdout,
-        stderr
-      } = await execPromise(`curl -X POST -sS http://localhost:${port ?? '9000'}/2015-03-31/functions/function/invocations -d \'${data}\'`);
-      if (stderr) return console.error(stderr);
-      console.log(stdout);
+      axios.post(
+        `http://localhost:${port ?? '9000'}/2015-03-31/functions/function/invocations`,
+        data
+      )
+      .then(function (response) {
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
 
     } catch (e) {
       console.log(e)
