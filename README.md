@@ -44,7 +44,6 @@ USAGE
 # Requirement
 
 ```
-npm 6.14.15
-docker # Requirement
-curl 7.77.0 (x86_64-apple-darwin21.0)
+npm
+docker
 ```
