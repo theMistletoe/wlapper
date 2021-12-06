@@ -24,7 +24,7 @@ This tool wraps above process and makes it easy to use as a CLI tool.
 
 # Example
 
-[example page](/example/READ)
+[example page](/example)
 
 
 <!-- tocstop -->
