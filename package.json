@@ -9,7 +9,7 @@
   "bugs": "https://github.com/theMistletoe/wlapper/issues",
   "dependencies": {
     "@oclif/command": "^1.8.36",
-    "@oclif/config": "^1",
+    "@oclif/config": "^1.18.17",
     "@oclif/plugin-help": "^3.2.4",
     "axios": "^1.6.4",
     "tslib": "^1"
